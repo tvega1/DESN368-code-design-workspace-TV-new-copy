@@ -43,7 +43,7 @@ As you complete each tool setup, **come back and update the "My Toolkit" section
 - **GitHub:** https://github.com/tvega1/DESN368-code-design-workspace-TV/tree/main ⏳
 - **Workspace (Forked Repo):** [Add your forked repo link here] ⏳
 - **Figma:** [Add your Figma username here] ⏳
-- **CodePen:** [Add your CodePen profile URL here] ⏳
+- **CodePen:** https://codepen.io/Tomei-Vega  ⏳
 - **LiveCode:** [Add your LiveCode profile here] ⏳
 - **GitHub Student Pack:** [Confirm approval status here] ⏳  
 
