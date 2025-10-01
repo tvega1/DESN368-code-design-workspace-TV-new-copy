@@ -3,12 +3,12 @@
 ## Background & Skills
 
 **1. Major:**  
-[Your answer here]
+Visual COmmunication Design
 
 **2. Design courses completed:**  
-[ ] DESN 100  
-[ ] DESN 200  
-[ ] DESN 216  
+[x] DESN 100  
+[x] DESN 200  
+[x] DESN 216  
 [ ] DESN 243  
 [ ] DESN 263  
 [ ] DESN 338  
