@@ -1,61 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Brown Sugar Cinnamon Bars Recipe</title>
 
-<style>
-    /* CSS ruleset targeting all <p> elements */
-    p {
-      color: rgb(0, 2, 108);
-    }
-  </style>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href='styles.css' rel='stylesheet'>
+    <!-- Internal (in-document) CSS -->
+    <style>
+      :root { --accent: #d80f6a; --ink: #001b2e; }
+      p { color: rgb(0, 2, 108); line-height: 1.7; }
+      header h1 { text-align: center; letter-spacing: 0.5px; }
+    </style>
 
-</head>
-<body>
-    <h1>Brown Sugar Cinnamon Bars</h1>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<img src="https://snipboard.io/hXCfiQ.jpg"alt"a picture of a brown suggar cinnamon bar. ">
+  <body>
+    <header aria-labelledby="page-title">
+      <h1 id="page-title">Brown Sugar Cinnamon Bars</h1>
 
-<h2 style="color: #d80f6a;">About This Recipe</h2>
-<p>This warm and chewy dessert combines the rich flavor of brown sugar with the cozy spice of cinnamon. <em>Perfect for fall gatherings or a comforting snack! </em>
-<p>Inspired by traditional blondies, these bars are simple to make and use ingredients you likely already have in your pantry.</p>
+      <!-- Image centered under the title -->
+      <figure class="hero">
+        <img
+          src="https://snipboard.io/hXCfiQ.jpg"
+          alt="A picture of a brown sugar cinnamon bar."
+          width="400"
+          height="400"
+          loading="lazy"
+        />
+      </figure>
+    </header>
 
-<h2>Ingredients</h2>
-<h3>Fresh Ingredients</h3>
-<ul>
-  <li>1 large egg</li>
-  <li>½ cup unsalted butter, melted</li>
-  <li>¼ cup honey</li>
-  <li>1 teaspoon vanilla extract</li>
-</ul>
+    <main>
+      <!-- Introduction -->
+      <section id="intro" class="section">
+        <h2 class="section-title" style="color: #d80f6a;">About This Recipe</h2>
 
-<h3>Pantry Staples</h3>
-<ul>
-  <li>1 cup all-purpose flour</li>
-  <li>1 cup light brown sugar, packed</li>
-  <li>½ teaspoon salt</li>
-  <li>1 teaspoon ground cinnamon, divided</li>
-  <li>3 tablespoons granulated sugar (for topping)</li>
-</ul>
+        <p>
+          This warm and chewy dessert combines the rich flavor of brown sugar with
+          the cozy spice of cinnamon. <em>Perfect for fall gatherings or a comforting snack!</em>
+        </p>
+        <p>
+          Inspired by traditional blondies, these bars are simple to make and use ingredients
+          you likely already have in your pantry.
+        </p>
 
-<h2>Instructions</h2>
-<ol>
-  <li><strong>Preheat and prep:</strong> Preheat oven to 350°F (175°C). Grease or line an 8×8-inch baking pan with parchment.</li>
-  <li><strong>Make the batter:</strong> In a bowl, whisk melted butter and brown sugar. Add egg, honey, and vanilla; whisk until combined.</li>
-  <li><strong>Add dry ingredients:</strong> Stir in flour, salt, and ½ teaspoon cinnamon until just combined.</li>
-  <li><strong>Spread and top:</strong> Pour batter into pan. Mix granulated sugar and remaining ½ teaspoon cinnamon and sprinkle over batter.</li>
-  <li><strong>Bake:</strong> Bake 22–25 minutes until a toothpick inserted in center comes out clean. Cool completely before cutting.</li>
-</ol>
+        <!-- Inline CSS example -->
+        <p
+          style="
+            font-style: italic;
+            background: #fff6fa;
+            border-left: 4px solid #d80f6a;
+            padding: 10px 12px;
+            border-radius: 8px;
+            margin-top: 12px;
+          "
+        >
+          Chef’s Tip: For extra depth, toast your cinnamon for 30–60 seconds in a dry pan
+          before mixing.
+        </p>
+      </section>
 
-<h2>Tips & Tricks</h2>
-<p>For extra flavor, you can add chopped nuts or chocolate chips. 
+      <!-- Ingredients -->
+      <section id="ingredients" class="section">
+        <h2 class="section-title">Ingredients</h2>
 
-<h2>Enjoy!</h2>
-<p><em>These bars stay fresh for up to 3 days in an airtight container — if they last that long!</em></p>
+        <h3>Fresh Ingredients</h3>
+        <ul class="ingredients-list">
+          <li>1 large egg</li>
+          <li>½ cup unsalted butter, melted</li>
+          <li>¼ cup honey</li>
+          <li>1 teaspoon vanilla extract</li>
+        </ul>
 
-</body>
+        <h3>Pantry Staples</h3>
+        <ul class="ingredients-list">
+          <li>1 cup all-purpose flour</li>
+          <li>1 cup light brown sugar, packed</li>
+          <li>½ teaspoon salt</li>
+          <li>1 teaspoon ground cinnamon, divided</li>
+          <li>3 tablespoons granulated sugar (for topping)</li>
+        </ul>
+      </section>
+
+      <!-- Instructions -->
+      <section id="instructions" class="section">
+        <h2 class="section-title">Instructions</h2>
+        <ol class="steps">
+          <li>
+            <strong>Preheat and prep:</strong> Preheat oven to 350°F (175°C).
+            Grease or line an 8×8-inch baking pan with parchment.
+          </li>
+          <li>
+            <strong>Make the batter:</strong> In a bowl, whisk melted butter and brown sugar.
+            Add egg, honey, and vanilla; whisk until combined.
+          </li>
+          <li>
+            <strong>Add dry ingredients:</strong> Stir in flour, salt, and ½ teaspoon
+            cinnamon until just combined.
+          </li>
+          <li>
+            <strong>Spread and top:</strong> Pour batter into pan. Mix granulated sugar and
+            remaining ½ teaspoon cinnamon and sprinkle over batter.
+          </li>
+          <li>
+            <strong>Bake:</strong> Bake 22–25 minutes until a toothpick inserted in center
+            comes out clean. Cool completely before cutting.
+          </li>
+        </ol>
+      </section>
+
+      <!-- Notes / Variations -->
+      <section id="notes" class="section">
+        <h2 class="section-title">Notes &amp; Variations</h2>
+        <p>
+          For extra texture, fold in ½ cup chopped toasted pecans or chocolate chips before baking.
+        </p>
+        <p><em>Storage:</em> These bars stay fresh up to 3 days in an airtight container.</p>
+
+        <div class="links">
+          <a
+            class="button"
+            href="https://crumblcookies.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get something similar at a bakery
+          </a>
+
+          <a
+            class="button secondary"
+            href="https://en.wikipedia.org/wiki/Blondie_(confection)"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Read more on Wikipedia
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Recipe by Tomei Vega, 2025</p>
+    </footer>
+  </body>
 </html>
