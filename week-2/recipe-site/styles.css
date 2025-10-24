@@ -40,39 +40,35 @@ body {
 
 ::selection { background: rgba(216, 15, 106, .18); color: var(--ink); }
 
-/* Center content container (starter code requirement) */
+/* Center content container */
 main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Typography (required hierarchy) */
+/* 🩷 HEADER — centers title & image */
+header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 header h1 {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(2rem, 2.5vw + 1rem, 3rem);
-  margin: 24px auto 8px;
-  color: var(--ink); /* keeps rubric descendant selector useful */
+  margin: 20px 0 8px;
+  color: var(--ink);
 }
 
-.section-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(1.35rem, 1.2vw + 1rem, 1.85rem);
-  margin: 28px 0 12px;
-  color: #14213d;
-}
-
-p, li {
-  font-size: 1rem;
-  line-height: 1.75;
-}
-
-/* Hero image */
+/* Hero image (right under title) */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 36px 0 42px;
+  margin: 8px 0 32px;
 }
 
 .hero img {
@@ -90,7 +86,21 @@ p, li {
   box-shadow: 0 10px 28px rgba(0,0,0,.12);
 }
 
-/* Lists */
+/* Section titles */
+.section-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.35rem, 1.2vw + 1rem, 1.85rem);
+  margin: 28px 0 12px;
+  color: #14213d;
+}
+
+/* Text & list basics */
+p, li {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+/* Ingredient list cards */
 .ingredients-list {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -135,7 +145,7 @@ p, li {
   box-shadow: 0 6px 18px rgba(216, 15, 106, .25);
 }
 
-/* Buttons & links */
+/* Buttons */
 a.button {
   display: inline-block;
   text-decoration: none;
@@ -164,6 +174,7 @@ a.button:focus-visible {
 
 /* Layout helpers */
 .section { margin-top: 12px; }
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -202,7 +213,7 @@ footer {
   border-radius: 8px;
 }
 
-/* Example of element, class, descendant selectors (for rubric) */
+/* Example selectors (for rubric) */
 header h1 { /* descendant selector example - color set above */ }
 .section .ingredients-list { /* class + descendant example */ }
 
