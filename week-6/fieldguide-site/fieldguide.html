@@ -271,5 +271,47 @@ src="https://images.surferseo.art/4d7c9bab-c8e4-427a-8b2f-b9d3147e24aa.png"
       </div>
     </main>
   </div>
+  
+      <!-- Nav active state helper: toggle .is-active and aria-current on click / load -->
+      <script>
+        (function(){
+          const links = Array.from(document.querySelectorAll('.nav-link'));
+
+          function setActiveByHash(hash){
+            if(!hash) return;
+            links.forEach(a => {
+              a.classList.remove('is-active');
+              a.removeAttribute('aria-current');
+            });
+            // match href exactly ending with the hash or equals the hash
+            const match = links.find(a => {
+              try { return a.getAttribute('href').split('#').pop() === hash.replace('#',''); }
+              catch(e){ return false; }
+            });
+            if(match){
+              match.classList.add('is-active');
+              match.setAttribute('aria-current','true');
+            }
+          }
+
+          // click handler: allow default navigation then update active class
+          links.forEach(a => {
+            a.addEventListener('click', (e) => {
+              const href = a.getAttribute('href') || '';
+              const hash = href.includes('#') ? href.split('#').pop() : '';
+              // Use a small timeout so the browser handles the native jump first
+              setTimeout(()=> setActiveByHash(hash ? '#'+hash : ''), 20);
+            });
+          });
+
+          // on load, set active based on location.hash (if present)
+          window.addEventListener('DOMContentLoaded', ()=>{
+            if(location.hash){ setActiveByHash(location.hash); }
+          });
+
+          // handle back/forward navigation
+          window.addEventListener('hashchange', ()=> setActiveByHash(location.hash));
+        })();
+      </script>
 </body>
 </html>

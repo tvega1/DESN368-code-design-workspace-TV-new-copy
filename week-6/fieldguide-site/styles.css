@@ -109,6 +109,44 @@ nav[aria-label="Section navigation"] li{ margin: 2px 0; }
 .nav-link.is-active, .nav-link[aria-current="true"]{ background: #1f2721; color: #e9fff0; }
 .nav-link.is-active .dot, .nav-link[aria-current="true"] .dot{ background: var(--creeper); box-shadow: 0 0 10px rgba(46,204,113,.6); }
 
+/* Improved hover, focus and active states for accessibility and clarity */
+.nav-link:focus-visible{
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(46,204,113,.12);
+  border-radius: 10px;
+}
+.nav-link:hover, .nav-link:focus{
+  background: linear-gradient(90deg,#222,#181818);
+  transform: translateX(4px);
+}
+.nav-link:active{
+  transform: translateX(2px) scale(.998);
+  background: #141414;
+}
+.nav-link:hover .dot, .nav-link:focus .dot{
+  background: var(--creeper);
+  box-shadow: 0 0 14px rgba(46,204,113,.65);
+  transform: scale(1.08);
+}
+.nav-link.is-active, .nav-link[aria-current="true"]{
+  /* Brighter, persistent "lit" appearance for the active navigation item */
+  background: linear-gradient(90deg, rgba(46,204,113,.06), rgba(8,14,8,.4));
+  color: #eaffef;
+  box-shadow: inset 6px 0 0 rgba(46,204,113,.18), 0 10px 30px rgba(0,0,0,.35);
+  transform: none; /* keep it steady when active */
+  border-left: 4px solid var(--creeper);
+  padding-left: 8px; /* make room for the left accent */
+}
+
+.nav-link.is-active .dot, .nav-link[aria-current="true"] .dot{
+  background: var(--creeper);
+  box-shadow: 0 0 18px rgba(46,204,113,.85), inset 0 0 4px rgba(255,255,255,.03);
+  transform: scale(1.14);
+}
+
+/* Provide a subtle transition for the dot and link for smooth interaction */
+.nav-link, .nav-link .dot{ transition: transform .12s ease, box-shadow .18s ease, background .18s ease; }
+
 /* Main backdrop */
 main{
   background:
