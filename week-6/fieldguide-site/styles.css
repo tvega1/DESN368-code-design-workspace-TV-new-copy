@@ -159,17 +159,40 @@ main{
 /* Hero */
 .hero{
   position: relative; overflow: hidden;
-  background: linear-gradient(180deg, #232323 0%, #1B1B1B 100%);
+  --hero-overlay: 0.6; /* default: 0 = no overlay, 1 = fully opaque */
+  /* Use local copy of the image for stability */
+  background-image: url("img/wood-planks.png"), linear-gradient(180deg, rgba(15,15,15,var(--hero-overlay)), rgba(8,8,8,calc(var(--hero-overlay) + 0.05)));
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: center center, center center;
+  background-blend-mode: overlay;
   border: 1px solid #2a2a2a; border-radius: var(--radius);
   padding: 64px 28px; box-shadow: var(--shadow);
   margin-top: 28px; margin-bottom: 28px;
   isolation: isolate;
+  color: var(--ink);
 }
 .hero::before{
+  /* subtle textured highlight pattern kept but lowered so text remains readable */
   content:""; position:absolute; inset:-2px; z-index:-1;
-  background: linear-gradient(45deg, rgba(255,255,255,.03) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.03) 50%, rgba(255,255,255,.03) 75%, transparent 75%, transparent);
-  background-size: 24px 24px; opacity:.8;
+  background: linear-gradient(45deg, rgba(255,255,255,.02) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.02) 50%, rgba(255,255,255,.02) 75%, transparent 75%, transparent);
+  background-size: 24px 24px; opacity:.6;
   mask: linear-gradient(180deg, rgba(0,0,0,.9) 0 60%, transparent 100%);
 }
 .hero::after{
-  content:""; position:absolute; width: 480px; height: 480px; right:-80px; top:-60px; opacity:.14;
+  /* dark overlay to ensure copy stays legible over the wood texture. Uses the
+     same --hero-overlay variable for consistent control. */
+  content:""; position:absolute; inset:0; z-index:-0; pointer-events:none;
+  background: linear-gradient(180deg, rgba(6,6,6,calc(var(--hero-overlay) * 0.6)), rgba(2,2,2,calc(var(--hero-overlay) * 0.9)));
+}
+
+/* Provide a toggle class for a lighter overlay if you want the texture to show more */
+.hero.light-overlay::after{
+  background: linear-gradient(180deg, rgba(6,6,6,calc(var(--hero-overlay) * 0.3)), rgba(2,2,2,calc(var(--hero-overlay) * 0.45)));
+}
+
+/* On small screens use a slightly stronger overlay and fallback to solid color for legibility */
+@media (max-width: 640px){
+  .hero{ background-size: cover, cover; }
+  .hero::after{ background: linear-gradient(180deg, rgba(0,0,0,0.7), rgba(0,0,0,0.75)); }
+}
