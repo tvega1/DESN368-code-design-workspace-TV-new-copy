@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minecraft Field Guide — Reflection</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Minecraft Survival Manual</h1>
+    <p>Reflection — Design, Code, and Lessons Learned</p>
+  </header>
+
+  <main id="main" class="content">
+    <section>
+      <center>
+      <h3>Design Decisions </h3> 
+      <h2> What design choices did you make and why?</h2>
+      </center>
+      <p>
+          When designing my Minecraft Field Guide, I wanted it to feel like an explorer’s notebook—rugged, immersive, and nostalgic. I used a deep green accent color inspired by the Creeper, paired with a stone-textured gray background to mirror Minecraft’s world-building materials. The fonts I chose—Bebas Neue for headings and Roboto Slab for body text—balanced playfulness with readability, giving the layout a structured but adventurous tone.
+      </p>
+      <p>
+        I also designed the layout with a clear hierarchy in mind: a fixed sidebar for easy navigation between sections, and large section titles that resemble in-game tooltips. My goal was to make the interface feel both familiar to Minecraft players and intuitive for new readers. The spacing, contrast, and use of icons were all chosen to guide attention without overwhelming the user.
+      </p>
+    </section>
+
+    <section>
+      <center>
+      <h3>Technical Challenges </h3> 
+      <h2> What was difficult to code? How did you solve it?</h2>
+      </center>
+      <p>
+        One of the biggest technical challenges was creating the interactive sidebar navigation that highlights active sections and scrolls smoothly. Getting the links to jump to specific sections while maintaining smooth transitions required experimenting with the <code>scroll-behavior: smooth;</code> property and testing anchor tags inside flex layouts. I also had to troubleshoot layout shifting when the sidebar became fixed on larger screens.
+      </p>
+      <p>
+        Another tricky part was aligning images and text consistently across sections. I used Flexbox to create responsive layouts, adjusting <code>justify-content</code> and <code>align-items</code> to center elements precisely. When things wouldn’t align properly, I used borders and temporary background colors to visualize spacing and fix errors. Through trial and error, I developed a better understanding of how nested containers behave.
+      </p>
+    </section>
+
+    
+    <section>
+      <center>
+      <h3>Responsive Strategy </h3>
+      <h2> How did you adapt your design for mobile?</h2>
+      </center>
+      <p>
+        For mobile screens, I wanted the site to stay functional but simplified. I converted the fixed sidebar into a collapsible top navigation menu using the checkbox hack with CSS—no JavaScript needed. This made the layout feel cleaner and allowed more space for the main content. I also reduced the number of visible items and adjusted padding and font sizes using media queries.
+      </p>
+      <p>
+        On smaller devices, images stack vertically and text flows naturally below them. I used <code>flex-direction: column;</code> for mobile breakpoints and increased line spacing to improve readability. Testing the design in Chrome’s responsive mode helped me make sure nothing overlapped or overflowed. The result is a layout that feels cohesive and intentional across all devices.
+      </p>
+    </section>
+
+    <section>
+      <center>
+      <h3>Learning Moments </h3> 
+      <h2> What did you learn about Flexbox or CSS positioning?</h2>
+      </center>
+      <p>
+        This project really deepened my understanding of how Flexbox works in real-world design. I learned how powerful properties like <code>flex-grow</code>, <code>flex-shrink</code>, and <code>flex-basis</code> are when it comes to controlling layout behavior. I also gained confidence in using <code>position: sticky</code> for headers and navigation bars without breaking the flow of the document.
+      </p>
+      <p>
+        I realized that Flexbox isn’t just about alignment—it’s about building a responsive system that adapts smoothly as content changes. By experimenting with different combinations of alignment and direction, I learned to achieve consistent spacing without relying on fixed pixel values. This made my overall workflow more fluid and efficient.
+      </p>
+    </section>
+
+    
+    
+    <section>
+      <center> 
+        <h3>Future Improvements </h3> 
+        <h2>What would you add or change with more time?</h2>
+      </center>
+      <p>
+        With more time, I’d love to add subtle animations—like hover effects for buttons or fade-ins for section transitions—to make the experience feel more dynamic. I’d also like to implement a dark mode toggle, since Minecraft players often prefer darker aesthetics that resemble nighttime gameplay.
+      </p>
+      <p>
+        Additionally, I’d expand the content with an interactive crafting recipe section, complete with icons and tooltips. I think adding those little details would make the guide not only educational but also fun to explore. Overall, I’m proud of how far this project pushed my design and coding skills, and it gave me a strong foundation to keep improving as a web designer.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <center>
+    <p>© 2025 Minecraft Field Guide — Designed & Coded by Tomei Vega</p>
+  </footer>
+
+</body>
+</html>
