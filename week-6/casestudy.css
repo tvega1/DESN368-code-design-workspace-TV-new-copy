@@ -42,12 +42,31 @@ a{
 }
 a:hover{ text-decoration: underline; }
 
-/* Header */
+/* Back button link styling */
+.btn-link{
+  display: inline-block;
+  padding: 10px 16px;
+  background: linear-gradient(90deg, rgba(46,204,113,.06), rgba(8,14,8,.4));
+  border: 1px solid var(--creeper);
+  border-radius: 8px;
+  color: #eaffef;
+  text-decoration: none;
+  transition: all .2s ease;
+  margin-top: 12px;
+}
+
+.btn-link:hover{
+  background: linear-gradient(90deg, rgba(46,204,113,.12), rgba(8,14,8,.5));
+  box-shadow: 0 0 12px rgba(46,204,113,.4);
+  text-decoration: none;
+}
+
+/* Header - Mobile-First */
 body > header{
   position: relative;
   overflow: hidden;
-  margin: 28px auto 24px;
-  padding: 48px 22px 40px;
+  margin: 16px auto 20px;
+  padding: 24px 16px 20px;
   border-radius: var(--radius);
   border: 1px solid #2a2a2a;
   background: linear-gradient(180deg, #232323 0%, #1B1B1B 100%);
@@ -55,6 +74,13 @@ body > header{
   isolation: isolate;
   max-width: min(1100px, 92vw);
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  body > header{
+    margin: 28px auto 24px;
+    padding: 48px 22px 40px;
+  }
 }
 body > header::before{
   content:"";
@@ -73,7 +99,7 @@ body > header::after{
 }
 body > header h1{
   font-family: var(--font-head);
-  font-size: clamp(36px, 6vw, 56px);
+  font-size: clamp(24px, 5vw, 56px);
   letter-spacing: .5px;
   margin: 0 0 8px;
   color: var(--ink);
@@ -81,35 +107,59 @@ body > header h1{
 body > header p{
   color: var(--iron);
   margin: 0;
-  font-size: clamp(14px, 2.2vw, 18px);
+  font-size: clamp(12px, 2vw, 18px);
 }
 
-/* Main content wrapper */
+/* Main content wrapper - Mobile-First */
 main.content{
   width: 92vw;
   max-width: var(--page-max);
-  margin: 0 auto 80px;
+  margin: 0 auto 60px;
+  padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+  main.content{
+    margin: 0 auto 80px;
+    padding: 0;
+  }
 }
 
 main.content > section {
-  margin-top: 80px;      
-  margin-bottom: 80px;    
-  padding: 36px 28px;     
+  margin-top: 40px;      
+  margin-bottom: 40px;    
+  padding: 24px 16px;     
   background: linear-gradient(180deg, #1c1c1c 0%, #171717 100%);
   border: 1px solid #262626;
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
-/* reduce spacing slightly on mobile */
-@media (max-width: 640px) {
+/* Desktop: increase spacing on larger screens */
+@media (min-width: 768px) {
   main.content > section {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    padding: 26px 18px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 36px 28px;
   }
-  main.content > section::after {
-    margin-top: 40px;
-    width: 80%;
+}
+
+/* Footer - Mobile-First */
+footer{
+  text-align: center;
+  padding: 20px 16px;
+  margin-top: 40px;
+}
+
+footer p{
+  margin: 8px 0;
+  font-size: 14px;
+  color: #ccc;
+}
+
+@media (min-width: 768px) {
+  footer{
+    padding: 40px 20px;
+    margin-top: 80px;
   }
 }
