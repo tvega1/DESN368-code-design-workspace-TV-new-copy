@@ -1,4 +1,4 @@
-/* Portfolio Styles */
+/* Portfolio Styles — Cozy Lodge + Witchy Palette */
 :root {
   /* The 5 Theme Colors */
   --coffee: #220901;     /* Coffee Bean */
@@ -21,6 +21,7 @@
   --card-glow: rgba(188, 57, 8, 0.22); /* Rust glow */
   --shadow-witch: 0 10px 30px rgba(148, 27, 12, 0.15);
 }
+
 * {
   box-sizing: border-box;
 }
@@ -42,9 +43,9 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(180deg, #171717, #0f0f0f);
+  background: linear-gradient(180deg, var(--coffee), var(--bg));
   padding: 40px 20px;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #31150C;
   text-align: center;
 }
 
@@ -52,6 +53,7 @@ header h1 {
   font-size: clamp(24px, 6vw, 48px);
   margin: 0 0 10px;
   font-weight: 700;
+  color: var(--accent);
 }
 
 header p {
@@ -90,7 +92,7 @@ nav a {
 
 nav a:hover {
   background: var(--accent);
-  color: var(--primary);
+  color: var(--coffee);
 }
 
 /* Projects Grid */
@@ -102,18 +104,19 @@ nav a:hover {
 }
 
 .project-card {
-  background: linear-gradient(135deg, #171717, #1a1a1a);
-  border: 1px solid #222;
+  background: linear-gradient(135deg, var(--card-bg), #120A06);
+  border: 1px solid #2D140C;
   border-radius: var(--radius);
   padding: 24px;
   transition: all 0.3s ease;
   cursor: pointer;
+  box-shadow: var(--shadow-witch);
 }
 
 .project-card:hover {
-  border-color: var(--accent);
+  border-color: var(--rust);
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(46, 204, 113, 0.1);
+  box-shadow: 0 12px 28px var(--card-glow);
 }
 
 .project-card h3 {
@@ -130,18 +133,19 @@ nav a:hover {
 
 .project-card a {
   display: inline-block;
-  color: var(--accent);
+  color: var(--orange);
   text-decoration: none;
   padding: 8px 12px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--orange);
   border-radius: 4px;
   transition: all 0.3s ease;
   font-size: 13px;
 }
 
 .project-card a:hover {
-  background: var(--accent);
-  color: var(--primary);
+  background: var(--rust);
+  border-color: var(--rust);
+  color: #ffffff;
 }
 
 /* Section */
@@ -162,10 +166,10 @@ section p {
 
 /* Footer */
 footer {
-  background: linear-gradient(180deg, #0f0f0f, #0a0a0a);
+  background: linear-gradient(180deg, var(--bg), #0A0503);
   padding: 20px;
   text-align: center;
-  border-top: 1px solid #222;
+  border-top: 1px solid #31150C;
   font-size: 12px;
   color: var(--muted);
   margin-top: 40px;
