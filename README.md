@@ -25,7 +25,7 @@ For my portfolio, I pursued a **dark, modern, minimalist** aesthetic.
 - **Accent Color:** #8c7850ff (Brown)
 - **Background:** #0f0f0f (Dark)
 
-**[View Figma File](https://www.figma.com/file/[your-figma-link])**
+**[View Figma File](https://www.figma.com/design/uLcuUsBxTSn4hXNQj6AdE0/desn-368-moods-vibe-Vega-f25--Copy-?node-id=0-1&t=Su8Yf9HDpagZMxCE-1)**
 
 ---
 

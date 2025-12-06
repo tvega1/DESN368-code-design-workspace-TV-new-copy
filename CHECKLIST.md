@@ -79,10 +79,10 @@ Use this to verify your work before submitting. Every box should be checked.
 - [ ] Filled in Design Direction (fonts, colors, vibe)
 - [ ] Listed all four featured projects with descriptions
 - [ ] Credited any assets I didn't create
-- [ ] Cited tutorials or resources I used
-- [ ] Disclosed AI assistance (or noted "none")
-- [ ] Added link to Figma file
-- [ ] Deleted the "How to Use" comment block at top
+- [x] Cited tutorials or resources I used
+- [x] Disclosed AI assistance (or noted "none")
+- [x] Added link to Figma file
+- [x] Deleted the "How to Use" comment block at top
 
 ---
 
