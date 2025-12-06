@@ -37,7 +37,7 @@ A responsive recipe page with semantic HTML, custom styling, and accessibility f
 
 **Tribute Page**  
 A tribute site celebrating a notable figure with structured layout and responsive design.  
-[View Project](https://codepen.io/Tomei-Vega/pen/LEGqZQp)
+[View Project](./week-4/tribute.html)
 
 **Field Guide**  
 An interactive research guide with sidebar navigation, persistent active states, and mobile-first responsive design.  
