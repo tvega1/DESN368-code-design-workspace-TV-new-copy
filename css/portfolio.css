@@ -283,6 +283,38 @@ footer .integrity {
   font-style: italic;
 }
 
+/* Reflection Page Styles */
+.reflection-section {
+  background: linear-gradient(135deg, var(--card-bg), #120A06);
+  border: 1px solid #2D140C;
+  border-radius: var(--radius);
+  padding: 30px;
+  margin: 30px 0;
+  box-shadow: var(--shadow-witch);
+}
+
+.reflection-section h2 {
+  color: var(--accent);
+  font-size: 24px;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+.reflection-section h3 {
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 20px;
+  font-family: system-ui, sans-serif;
+}
+
+.reflection-section p {
+  line-height: 1.8;
+  color: var(--text);
+  font-size: 16px;
+  margin: 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   header {
