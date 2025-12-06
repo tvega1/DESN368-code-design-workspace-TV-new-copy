@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tomei Vega — Web Design Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="my-favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="96x96" href="my-favicon/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="my-favicon/apple-touch-icon.png">
   <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
@@ -16,44 +19,62 @@
     <nav>
       <a href="learning-log.html">📚 Learning Log</a>
       <a href="https://github.com/tvega1" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/tomei-vega" target="_blank">LinkedIn</a>
       <a href="https://www.figma.com/" target="_blank">Figma</a>
     </nav>
 
-    <section>
-      <h2>Welcome</h2>
-      <p>
-        I'm learning to build for the web with HTML and CSS, understanding how the web works at the source level. 
-        This portfolio showcases my journey through DESN368: Code + Design 1 at Eastern Washington University.
-      </p>
+    <section class="bio">
+      <div class="bio-content">
+        <div class="bio-image">
+          <img src="images/profile-photo.svg" alt="Tomei Vega smiling, wearing casual attire" width="200" height="200">
+        </div>
+        <div class="bio-text">
+          <h2>Welcome</h2>
+          <p>
+            Hi, I'm Tomei Vega, a web design student at Eastern Washington University passionate about creating accessible, 
+            user-friendly digital experiences. Through DESN368: Code + Design 1, I'm building a foundation in HTML, CSS, 
+            and responsive design principles.
+          </p>
+          <p>
+            My goal is to become a front-end developer who combines technical skill with thoughtful design. I'm interested 
+            in UX/UI design, accessibility, and creating inclusive web experiences. When I'm not coding, you'll find me 
+            exploring design trends, playing video games, or experimenting with new creative projects.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section>
       <h2>Featured Projects</h2>
       <div class="projects">
         
-        <div class="project-card">
+        <article class="project-card">
+          <img src="images/recipe-thumbnail.svg" alt="Screenshot of recipe site showing a styled recipe card" class="project-thumbnail">
           <h3>Recipe Site</h3>
           <p>A responsive recipe page with semantic HTML, custom styling, and accessibility features.</p>
           <a href="week-2/recipe-site/recipe.html">View Project →</a>
-        </div>
+        </article>
 
-        <div class="project-card">
+        <article class="project-card">
+          <img src="images/tribute-thumbnail.svg" alt="Screenshot of tribute page dedicated to LeBron James" class="project-thumbnail">
           <h3>Tribute Page</h3>
           <p>A tribute site celebrating a notable figure with structured layout and responsive design.</p>
           <a href="https://codepen.io/Tomei-Vega/pen/LEGqZQp" target="_blank">View Project →</a>
-        </div>
+        </article>
 
-        <div class="project-card">
+        <article class="project-card">
+          <img src="images/fieldguide-thumbnail.svg" alt="Screenshot of interactive Minecraft field guide with sidebar navigation" class="project-thumbnail">
           <h3>Field Guide</h3>
           <p>An interactive field guide with sidebar navigation and responsive design.</p>
           <a href="week-6/fieldguide-site/fieldguide.html">View Project →</a>
-        </div>
+        </article>
 
-        <div class="project-card">
+        <article class="project-card">
+          <img src="images/landing-thumbnail.svg" alt="Screenshot of product landing page for cat litter subscription service" class="project-thumbnail">
           <h3>Product Landing Page</h3>
           <p>A responsive landing page showcasing product design and layout techniques.</p>
           <a href="week-10/product-landing-page.html">View Project →</a>
-        </div>
+        </article>
 
       </div>
     </section>
@@ -73,6 +94,7 @@
 
   <footer>
     <p>&copy; 2025 Tomei Vega | DESN368 Course Work | <a href="https://github.com/tvega1/DESN368-code-design-workspace-TV-new-copy">Repository</a></p>
+    <p class="integrity">Co-created with Claude AI (Anthropic) for debugging, layout assistance, and code generation.</p>
   </footer>
 
 </body>
