@@ -98,7 +98,7 @@ nav a:hover {
 /* Projects Grid */
 .projects {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   margin: 40px 0;
 }
@@ -182,6 +182,26 @@ section p {
   color: var(--muted);
 }
 
+/* Learning Log Link Button */
+section strong a {
+  display: inline-block;
+  color: var(--orange);
+  background: transparent;
+  border: 2px solid var(--orange);
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+section strong a:hover {
+  background: var(--orange);
+  color: var(--coffee);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--card-glow);
+}
+
 /* Footer */
 footer {
   background: linear-gradient(180deg, var(--bg), #0A0503);
@@ -228,5 +248,12 @@ footer a:hover {
 
   .projects {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Tablet breakpoint for 2-column grid */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
