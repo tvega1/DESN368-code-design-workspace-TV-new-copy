@@ -1,5 +1,9 @@
-<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="100" cy="100" r="100" fill="#F6AA1C"/>
-  <text x="100" y="95" font-family="Arial" font-size="28" fill="#220901" text-anchor="middle" font-weight="bold">Your</text>
-  <text x="100" y="125" font-family="Arial" font-size="28" fill="#220901" text-anchor="middle" font-weight="bold">Photo</text>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="100" cy="100" r="100"/>
+    </clipPath>
+  </defs>
+  <image xlink:href="profile-photo.jpg" x="0" y="0" width="200" height="200" clip-path="url(#circle-clip)" preserveAspectRatio="xMidYMid slice"/>
+  <circle cx="100" cy="100" r="100" fill="none" stroke="#BC3908" stroke-width="3"/>
 </svg>
