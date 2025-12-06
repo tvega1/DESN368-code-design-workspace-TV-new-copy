@@ -111,12 +111,30 @@ nav a:hover {
   transition: all 0.3s ease;
   cursor: pointer;
   box-shadow: var(--shadow-witch);
+
+  /* needed for knit texture */
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🧶 knitted fabric overlay */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/texture-knit.png"); /* path to your knit image */
+  background-size: 220px;
+  background-repeat: repeat;
+  opacity: 0.12;                 /* subtle! */
+  mix-blend-mode: overlay;
+  pointer-events: none;
 }
 
 .project-card:hover {
   border-color: var(--rust);
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px var(--card-glow);
+  box-shadow: 0 14px 32px var(--card-glow);
+  background: linear-gradient(135deg, #1c0f0a, #2b130c);
 }
 
 .project-card h3 {
