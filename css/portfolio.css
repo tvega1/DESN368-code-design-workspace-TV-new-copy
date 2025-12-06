@@ -250,10 +250,3 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
 }
-
-/* Tablet breakpoint for 2-column grid */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
