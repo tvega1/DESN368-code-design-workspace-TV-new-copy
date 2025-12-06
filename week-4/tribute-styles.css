@@ -1,0 +1,283 @@
+:root{
+  --page-bg: #5239BB;       
+  --lavender: rgba(255,255,255,.10); 
+  --lavender-dark: #6F5CC1;
+
+  --square: #FADC40;       
+
+  --surface: #ffffff;
+  --ink: #241c3b;
+  --ink-weak: #5b5376;
+
+  --accent: #6B5CFF;
+  --accent-ink: #fff;
+
+  --rule: #e6e1f7;
+  --shadow: 0 22px 50px rgba(0,0,0,.22);
+}
+
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; }
+img{ display:block; max-width:100%; height:auto; }
+.visually-hidden,
+.sr-only{ position:absolute !important; width:1px; height:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); }
+
+/* Base */
+body{
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--surface);           
+  background: var(--page-bg);      
+}
+
+.page .canvas{
+  max-width: 960px;
+  margin: 40px auto;
+  background: var(--lavender);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  padding: 24px;
+  position: relative;
+  backdrop-filter: blur(2px);
+}
+
+h2, .slab-title{
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 800;
+  letter-spacing: .2px;
+  color: var(--ink);
+  margin: 0 0 12px;
+}
+
+.page-title{
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 24px;
+  text-shadow: 0 4px 12px rgba(0,0,0,.4);
+}
+
+/* === HERO: make both images identical size & side-by-side === */
+.hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* equal widths */
+  gap: 0;                         /* flush together; set to 12–16px if you want a gutter */
+  align-items: stretch;
+  position: relative;
+}
+
+/* Both figures get the same box treatment (covers .hero-figure and .panel) */
+.hero figure{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 420px;                  /* match your Figma; adjust as needed */
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+/* Force both images to fill/crop evenly */
+.hero figure img{
+  width: 100%;
+  height: 100% !important;        /* beats #image { height:auto } */
+  object-fit: cover;
+  display: block;
+}
+
+.panel{
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--surface);
+  border: 1px solid rgba(0,0,0,.06);
+}
+
+.panel-left img,
+.panel-right img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -22px;
+  margin: 0;
+  background: var(--lavender-dark);
+  color: #fff;
+  border-radius: 999px;
+  padding: 16px 26px;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+  border: 3px solid rgba(255,255,255,.6);
+}
+
+.quote p{ margin:0; line-height:1.25; }
+.quote span{ opacity:.95; }
+
+.timeline-square{
+  position: relative;
+  margin: 48px 0 0;
+  background: var(--square);        
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  /* Make it a square */
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 860px;
+  margin-inline: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+/* Inner column that holds the text */
+.timeline-inner{
+  background: rgba(255,255,255,.88);
+  color: #1f1931;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.15);
+  width: min(92%, 720px);
+  max-height: 86%;
+  padding: 20px 22px;
+  overflow: auto;                   /* scroll if content exceeds the square */
+}
+
+/* Title */
+.timeline-inner .slab-title{
+  text-align: left;
+  width: 100%;
+}
+
+/* Timeline list formatting */
+.tl{
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  color: #1f1931;
+}
+
+.tl li{
+  position: relative;
+  padding: 10px 0 12px;
+  border-bottom: 1px solid rgba(0,0,0,.08);
+}
+
+.tl li:last-child{ border-bottom: 0; }
+
+.tl .year{
+  display: inline-block;
+  min-width: 110px;
+  font-weight: 800;
+  color: #1a1530;
+}
+
+.tl .headline{
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 10px;
+  color: #1a1530;
+}
+
+.tl .details{
+  list-style: disc;
+  margin: 8px 0 6px 120px;          /* aligns bullets past the year rail */
+  padding-left: 18px;
+  font-size: 0.975rem;
+  line-height: 1.5;
+  color: #30284d;
+}
+
+.tl .details li{ margin: 4px 0; }
+
+/* Decorative team logos (optional) */
+.logo{
+  position: absolute;
+  pointer-events: none;
+  opacity: .9;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.18));
+}
+
+.logo.cavs{
+  width: 132px;
+  right: 18px;
+  top: 18px;
+}
+
+.logo.lakers{
+  width: 220px;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* =========================
+   Overview + CTA card
+   ========================= */
+.card{
+  background: var(--surface);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  padding: 22px;
+  margin: 28px 0 0;
+  color: var(--ink);
+}
+
+.cta-wrap{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.cta{
+  display: inline-block;
+  background: var(--lavender-dark);
+  color: var(--accent-ink);
+  padding: 12px 18px;
+  border-radius: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 22px rgba(0,0,0,.25);
+  border: 2px solid rgba(255,255,255,.7);
+}
+
+.cta:hover{ filter: brightness(1.05); }
+
+/* Footer */
+.site-footer{
+  text-align: center;
+  color: #fff;
+  margin-top: 22px;
+  opacity: .95;
+}
+
+/* Center the hero image (rubric) */
+#image{
+  margin: 0 auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px){
+  .hero{ grid-template-columns: 1fr; }
+  .quote{ position: static; transform:none; margin: 12px auto 0; }
+
+  /* Unlock strict square on small screens so text remains readable */
+  .timeline-square{
+    aspect-ratio: auto;
+  }
+  .timeline-inner{
+    max-height: none;
+  }
+}
