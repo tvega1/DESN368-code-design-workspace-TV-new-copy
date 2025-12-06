@@ -10,20 +10,20 @@ Instructor: Travis Masingale
 
 This repository documents my journey through DESN368, where I learned to build for the web with HTML and CSS—understanding how the web actually works at the source level.
 
-- **[View Live Portfolio](https://[your-username].github.io/[your-repo-name]/)**
-- **[View Learning Log](https://[your-username].github.io/[your-repo-name]/learning-log.html)** — Weekly progress & exercises
+- **[View Live Portfolio](https://tvega1.github.io/DESN368-code-design-workspace-TV-new-copy/)**
+- **[View Learning Log](https://tvega1.github.io/DESN368-code-design-workspace-TV-new-copy/learning-log.html)** — Weekly progress & exercises
 
 ---
 
 ## Design Direction
 
-For my portfolio, I pursued a **[describe your vibe in 2-3 words]** aesthetic.
+For my portfolio, I pursued a **dark, modern, minimalist** aesthetic.
 
-- **Header Font:** [Font Name]
-- **Body Font:** [Font Name]
-- **Primary Color:** [Hex Code]
-- **Accent Color:** [Hex Code]
-- **Background:** [Hex Code]
+- **Header Font:** System UI (Roboto, Helvetica Neue)
+- **Body Font:** System UI (Segoe UI, Arial)
+- **Primary Color:** #1a1a1a
+- **Accent Color:** #8c7850ff (Brown)
+- **Background:** #0f0f0f (Dark)
 
 **[View Figma File](https://www.figma.com/file/[your-figma-link])**
 
@@ -31,21 +31,29 @@ For my portfolio, I pursued a **[describe your vibe in 2-3 words]** aesthetic.
 
 ## Featured Projects
 
-**The Recipe**  
-[1-sentence description]  
-[View Project](./week-XX/recipe/)
+**Recipe Site**  
+A responsive recipe page with semantic HTML, custom styling, and accessibility features.  
+[View Project](./week-2/recipe-site/recipe.html)
 
-**Tribute Site**  
-[1-sentence description]  
-[View Project](./week-XX/tribute/)
+**Tribute Page**  
+A tribute site celebrating a notable figure with structured layout and responsive design.  
+[View Project](https://codepen.io/Tomei-Vega/pen/LEGqZQp)
 
 **Field Guide**  
-[1-sentence description]  
-[View Project](./week-XX/field-guide/)
+An interactive research guide with sidebar navigation, persistent active states, and mobile-first responsive design.  
+[View Project](./week-6/fieldguide-site/fieldguide.html)
+
+**Case Study**  
+A detailed case study exploring design and development decisions with responsive layout and navigation.  
+[View Project](./week-6/casestudy.html)
+
+**CSS Reset Research**  
+Research and exploration of CSS reset techniques, normalize.css, and modern best practices.  
+[View Project](./week-7/css-reset-research.html)
 
 **Product Landing Page**  
-[1-sentence description]  
-[View Project](./week-XX/landing-page/)
+A responsive landing page showcasing product design and layout techniques using HTML and CSS.  
+[View Project](./week-10/product-landing-page.html)
 
 ---
 
@@ -70,21 +78,22 @@ For my portfolio, I pursued a **[describe your vibe in 2-3 words]** aesthetic.
 ## Credits & Citations
 
 **Assets**
-- [List any images, icons, or assets you didn't create]
+- System UI fonts (no custom fonts downloaded)
 
 **Tutorials & Resources**
-- [Any tutorials or Stack Overflow threads that helped]
+- MDN Web Docs — CSS Grid and Flexbox
+- Josh Comeau — A Modern CSS Reset
+- Eric Meyer — CSS Reset (2007)
 
 **AI Assistance**
-- [If used: "Used Claude for debugging CSS grid in Week 6"]
-- [If none: "No AI assistance used"]
+- Used Chatgpt for debugging CSS layout issues and generating code templates
 
 ---
 
 ## Reflection
 
-[→ Read Full Reflection on Portfolio Site](https://[your-username].github.io/[your-repo-name]/reflection.html)
+[→ Read Full Reflection on Portfolio Site](https://tvega1.github.io/DESN368-code-design-workspace-TV-new-copy/reflection.html)
 
 ---
 
-© 2025 [Your Name]. Built for DESN368 at Eastern Washington University.
+© 2025 Tomei Vega. Built for DESN368 at Eastern Washington University.
