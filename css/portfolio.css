@@ -98,7 +98,7 @@ nav a:hover {
 /* Projects Grid */
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   margin: 40px 0;
 }
