@@ -10,8 +10,8 @@ Instructor: Travis Masingale
 
 This repository documents my journey through DESN368, where I learned to build for the web with HTML and CSS—understanding how the web actually works at the source level.
 
-- **[View Live Portfolio](https://tvega1.github.io/DESN368-code-design-workspace-TV-new-copy/)**
-- **[View Learning Log](https://tvega1.github.io/DESN368-code-design-workspace-TV-new-copy/learning-log.html)** — Weekly progress & exercises
+- **[View Live Portfolio](https://tvega1.github.io/DESN368-code-design-workspace-tv/)**
+- **[View Learning Log](https://tvega1.github.io/DESN368-code-design-workspace-tv/learning-log.html)** — Weekly progress & exercises
 
 ---
 
@@ -92,7 +92,7 @@ A responsive landing page showcasing product design and layout techniques using 
 
 ## Reflection
 
-[→ Read Full Reflection on Portfolio Site](https://tvega1.github.io/DESN368-code-design-workspace-TV-new-copy/reflection.html)
+[→ Read Full Reflection on Portfolio Site](https://tvega1.github.io/DESN368-code-design-workspace-tv/reflection.html)
 
 ---
 
