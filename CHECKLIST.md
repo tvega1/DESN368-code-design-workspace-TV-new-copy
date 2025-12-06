@@ -8,23 +8,23 @@ Use this to verify your work before submitting. Every box should be checked.
 - [x] Renamed old `index.html` to `learning-log.html` (NOT moved, NOT deleted)
 - [x] Created `archive/` folder
 - [x] Moved old README to `archive/course-log.md`
-- [ ] Created new `index.html` (portfolio home page)
-- [ ] Created new `README.md` using the template
-- [ ] Created `css/` folder for portfolio styles
-- [ ] Created `images/` folder for portfolio images
-- [ ] All `week-XX` folders are still in root (not moved)
-- [ ] All links in `learning-log.html` still work
+- [x] Created new `index.html` (portfolio home page)
+- [x] Created new `README.md` using the template
+- [x] Created `css/` folder for portfolio styles
+- [x] Created `images/` folder for portfolio images
+- [x] All `week-XX` folders are still in root (not moved)
+- [x] All links in `learning-log.html` still work
 
 ---
 
 ## Part 2: Visual Design (Figma)
 
-- [ ] Revisited original "Moodz and Vibes" file
-- [ ] Defined typography (Header font + Body font)
-- [ ] Defined 5-color palette (Background, Text, Accent, Secondary, Error/Success)
-- [ ] Created Desktop mockup
-- [ ] Created Mobile mockup
-- [ ] If I pivoted from original direction, I justified the change in my reflection
+- [x] Revisited original "Moodz and Vibes" file
+- [x] Defined typography (Header font + Body font)
+- [x] Defined 5-color palette (Background, Text, Accent, Secondary, Error/Success)
+- [x] Created Desktop mockup
+- [x] Created Mobile mockup
+- [x] If I pivoted from original direction, I justified the change in my reflection
 
 ---
 
@@ -46,15 +46,15 @@ Use this to verify your work before submitting. Every box should be checked.
 
 ## Part 3: Portfolio Build — Technical
 
-- [ ] Semantic HTML (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
-- [ ] CSS Variables for colors
-- [ ] CSS Variables for fonts
-- [ ] Layout uses Flexbox and/or Grid
-- [ ] At least one `@media` query for responsive design
-- [ ] At least one CSS transition on interactive element (hover state, button, card)
-- [ ] Link states styled (`a:link`, `a:visited`, `a:hover`, `a:active`)
-- [ ] Custom favicon installed and visible in browser tab
-- [ ] All images have descriptive `alt` text
+- [x] Semantic HTML (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`)
+- [x] CSS Variables for colors
+- [x] CSS Variables for fonts
+- [x] Layout uses Flexbox and/or Grid
+- [x] At least one `@media` query for responsive design
+- [x] At least one CSS transition on interactive element (hover state, button, card)
+- [x] Link states styled (`a:link`, `a:visited`, `a:hover`, `a:active`)
+- [x] Custom favicon installed and visible in browser tab
+- [x] All images have descriptive `alt` text
 - [ ] Site is live on GitHub Pages
 - [ ] Tested on mobile (or narrow browser window)
 
